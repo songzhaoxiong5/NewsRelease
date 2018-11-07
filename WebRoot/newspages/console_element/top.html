@@ -1,0 +1,18 @@
+<div id="header">
+  <div id="top_login">
+ 		<label><%=message!=null&&!message.equals("")?message:"" %></label>
+      <form id="login" method="post" action="doLogin.jsp">
+        	<label>登录名</label><input type="text" name="userName" value='<%=uname!=null?uname:"" %>' class="login_input" />
+            <label>密&#160;&#160;码</label><input type="password" name="password" value='<%=upwd!=null?upwd:"" %>' class="login_input" />
+            <input type="submit" class="login_sub" value="登录" />
+            <a href="${pageScope.basePath}/news_init_index.jsp" class="login_link">返回首页</a>
+        </form>
+       
+    <img src="images/friend_logo.gif" alt="Google" id="friend_logo" /> 
+  </div>
+  <div id="nav">
+    <div id="logo"> <img src="images/logo.jpg" alt="新闻中国" /> </div>
+    <div id="a_b01"> <img src="images/a_b01.gif" alt="" /> </div>
+    <!--mainnav end-->
+  </div>
+</div>
